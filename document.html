@@ -1,0 +1,134 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="note">
+        <span
+          >The sliders influence how likely a skill will be upgraded<br />
+          Currently hardcoded at 42 points, highest point is 8 and max health is
+          5</span
+        >
+      </div>
+      <div class="weights">
+        <div class="sliderBox">
+          <span>Body Damage</span>
+          <input
+            type="range"
+            min="1"
+            max="15"
+            class="slider1 slider"
+            onInput="this.parentElement.children[2].textContent = this.value"
+          />
+          <span></span>
+        </div>
+        <div class="sliderBox">
+          <span>Max Health</span>
+          <input
+            type="range"
+            min="1"
+            max="15"
+            class="slider2 slider"
+            onInput="this.parentElement.children[2].textContent = this.value"
+          />
+          <span></span>
+        </div>
+        <div class="sliderBox">
+          <span>Bullet Speed</span>
+          <input
+            type="range"
+            min="1"
+            max="15"
+            class="slider3 slider"
+            onInput="this.parentElement.children[2].textContent = this.value"
+          />
+          <span></span>
+        </div>
+        <div class="sliderBox">
+          <span>Bullet Health</span>
+          <input
+            type="range"
+            min="1"
+            max="15"
+            class="slider4 slider"
+            onInput="this.parentElement.children[2].textContent = this.value"
+          />
+          <span></span>
+        </div>
+        <div class="sliderBox">
+          <span>Bullet Penetration</span>
+          <input
+            type="range"
+            min="1"
+            max="15"
+            class="slider5 slider"
+            onInput="this.parentElement.children[2].textContent = this.value"
+          />
+          <span></span>
+        </div>
+        <div class="sliderBox">
+          <span>Bullet Damage</span>
+          <input
+            type="range"
+            min="1"
+            max="15"
+            class="slider6 slider"
+            onInput="this.parentElement.children[2].textContent = this.value"
+          />
+          <span></span>
+        </div>
+        <div class="sliderBox">
+          <span>Reload</span>
+          <input
+            type="range"
+            min="1"
+            max="15"
+            class="slider7 slider"
+            onInput="this.parentElement.children[2].textContent = this.value"
+          />
+          <span></span>
+        </div>
+        <div class="sliderBox">
+          <span>Movement Speed</span>
+          <input
+            type="range"
+            min="1"
+            max="15"
+            class="slider8 slider"
+            onInput="this.parentElement.children[2].textContent = this.value"
+          />
+          <span></span>
+        </div>
+        <div class="sliderBox">
+          <span>Shield Regen</span>
+          <input
+            type="range"
+            min="1"
+            max="15"
+            class="slider9 slider"
+            onInput="this.parentElement.children[2].textContent = this.value"
+          />
+          <span></span>
+        </div>
+        <div class="sliderBox">
+          <span>Shield Capacity</span>
+          <input
+            type="range"
+            min="1"
+            max="15"
+            class="slider10 slider"
+            onInput="this.parentElement.children[2].textContent = this.value"
+          />
+          <span></span>
+        </div>
+        <button class="generate">Generate</button>
+        <span class="output">Output</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
