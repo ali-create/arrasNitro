@@ -62,3 +62,10 @@ sliders.forEach((x,i) => x.addEventListener("input", function(){
 document.querySelector(".generate").addEventListener("click", function(){
     document.querySelector(".output").textContent = Object.values(generateRandomBuild(maxPoints, maxSkill, sliderValues)).join("/")
 })
+
+document.querySelector(".copy").addEventListener("click", function(){ 
+    const text = document.querySelector(".output").textContent
+    navigator.clipboard.writeText(text)
+    document.querySelector(".copy").textContent = "Copied!"
+    setTimeout(() => document.querySelector(".copy").textContent = "Copy", 1000)
+})
